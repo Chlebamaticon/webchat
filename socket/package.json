@@ -1,0 +1,8 @@
+{
+  "name": "webchat-socket",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "description": "Socket common typings",
+  "license": "MIT"
+}

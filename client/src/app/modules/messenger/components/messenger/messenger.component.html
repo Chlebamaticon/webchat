@@ -1,0 +1,10 @@
+<div class="messenger__container">
+    <div class="messenger__box">
+        <app-message *ngFor="let message of (messengerFacade.messages$ | async)" [message]="message">
+
+        </app-message>
+    </div>
+
+    <app-textfield (message)="onMessage($event)">
+    </app-textfield>
+</div>

@@ -1,0 +1,26 @@
+:host {
+    display: inline-block;
+}
+
+.messenger {
+    &__container {
+        display: flex;
+        flex-flow: column nowrap;
+
+        border: 1px solid rgba(0,0,0, .17);
+        box-shadow: 5px 5px 10px rgba(0,0,0,.25),
+                    0px 5px 5px rgba(0,0,0, .17);
+    }
+
+    &__box {
+        display: block;
+        max-height: 256px;
+        min-height: 256px;
+        min-width: 512px;
+        max-width: 512px;
+
+        margin: .5rem .5rem 0;
+
+        overflow-x: auto;
+    }
+}

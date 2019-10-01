@@ -1,0 +1,37 @@
+:host {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: hidden;
+}
+
+.message {
+    flex: 1 1 100%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    $message: &;
+    &--client {
+        justify-content: flex-end;
+
+        #{ $message }__content {
+            background-color: rgb(102, 175, 139);
+        }
+    }
+
+    &--server {
+        justify-content: flex-start;
+
+        #{ $message }__content {
+            background-color: rgb(102, 119, 175);
+        }
+    }
+
+    &__content {
+        border-radius: 4px;
+        padding: .5rem 1rem;
+        margin: .25rem 0;
+        text-overflow: ellipsis;
+
+        background-color: rgb(187, 203, 218);
+    }
+}

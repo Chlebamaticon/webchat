@@ -1,0 +1,36 @@
+.textfield {
+    &__control {
+        display: flex;
+        flex-flow: row nowrap;
+
+        button[type="submit"],
+        input[type="textfield"] {
+            border: none;
+            border-top: 1px solid rgba(0,0,0, .17);
+            outline: none;
+        }
+
+        input[type="textfield"] {
+            flex: 1 1 100%;
+
+            display: block;
+            padding: .25rem;
+            border-right: none;
+        }
+        
+        input[type="textfield"] {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+
+        button[type="submit"] {
+            flex: 0 0 auto;
+            background: transparent;
+            padding: .125rem .5rem;
+
+            text-transform: uppercase;
+            box-shadow: none;
+            border-left: none;
+        }
+    }
+}

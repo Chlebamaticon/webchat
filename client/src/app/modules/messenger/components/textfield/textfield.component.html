@@ -1,0 +1,6 @@
+<form [formGroup]="form" class="textfield">
+    <div class="textfield__control">
+        <input type="textfield" id="message-input" formControlName="message">
+        <button type="submit" (click)="send($event)" [disabled]="form.invalid">send</button>
+    </div>
+</form>

@@ -1,0 +1,11 @@
+:host {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.app {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
